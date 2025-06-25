@@ -1,5 +1,3 @@
-## Clone Repo
-
 ## Project setup
 ```
 npm install
