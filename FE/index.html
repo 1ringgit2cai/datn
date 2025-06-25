@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Trang chủ - Cổng thông tin Thạc sĩ Khoa học Dữ liệu</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #f8f9fa;
+                scroll-behavior: smooth;
+            }
+
+            .hero {
+                background: linear-gradient(to right, #1a237e, #3949ab);
+                color: white;
+                padding: 120px 0;
+                text-align: center;
+                background-image: url("https://www.transparenttextures.com/patterns/graphy.png");
+            }
+
+            .stats-card {
+                border-radius: 1rem;
+                padding: 30px;
+                background: white;
+                text-align: center;
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .stats-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            }
+
+            .section-title {
+                margin: 70px 0 30px;
+                font-weight: 700;
+                font-size: 1.9rem;
+                border-left: 6px solid #3949ab;
+                padding-left: 18px;
+                color: #1a237e;
+                position: relative;
+            }
+
+            .section-title::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+                width: 60px;
+                height: 3px;
+                background: #ffcc80;
+            }
+
+            .card-title {
+                font-weight: 600;
+            }
+
+            .navbar-brand span {
+                font-weight: bold;
+                color: #ffcc80;
+            }
+
+            .card {
+                transition: all 0.3s ease-in-out;
+                border: none;
+                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+            }
+
+            .card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            }
+
+            footer {
+                background: #1a237e;
+            }
+
+            .btn-outline-primary:hover,
+            .btn-success.btn-sm:hover {
+                transform: scale(1.05);
+            }
+
+            .list-group-item-action:hover {
+                background-color: #f1f1f1;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav
+            class="navbar navbar-expand-lg navbar-dark"
+            style="background-color: #1a237e"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="#"
+                    ><i class="fas fa-graduation-cap me-2"></i>MSc
+                    <span>Portal</span></a
+                >
+                <button
+                    class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Khóa học</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Giảng viên</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tài liệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Luận văn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Đăng nhập</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="display-4 fw-bold">
+                    Cổng Thông Tin Thạc Sĩ Khoa Học Dữ Liệu
+                </h1>
+                <p class="lead mt-3">
+                    Nền tảng hỗ trợ tra cứu tài liệu, quản lý khóa học và luận
+                    văn hiệu quả dành cho học viên cao học.
+                </p>
+                <a href="#" class="btn btn-warning btn-lg mt-4 shadow-sm"
+                    ><i class="fas fa-arrow-right me-2"></i>Khám phá ngay</a
+                >
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="container text-center mt-5">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <i class="fas fa-book fa-2x text-primary mb-2"></i>
+                        <h3>120+</h3>
+                        <p>Khóa học</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <i
+                            class="fas fa-chalkboard-teacher fa-2x text-success mb-2"
+                        ></i>
+                        <h3>35+</h3>
+                        <p>Giảng viên</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <i class="fas fa-file-alt fa-2x text-warning mb-2"></i>
+                        <h3>500+</h3>
+                        <p>Tài liệu</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-card">
+                        <i class="fas fa-scroll fa-2x text-danger mb-2"></i>
+                        <h3>180+</h3>
+                        <p>Luận văn</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Announcements -->
+        <section class="container">
+            <h2 class="section-title">📢 Thông báo mới nhất</h2>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <strong>[20/06/2025]</strong> Tuyển sinh học kỳ mới đã bắt
+                    đầu - xem chi tiết tại đây
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <strong>[15/06/2025]</strong> Nộp luận văn đợt 2 năm học
+                    2024-2025 - hạn cuối 30/06
+                </a>
+            </div>
+        </section>
+
+        <!-- Documents -->
+        <section class="container">
+            <h2 class="section-title">📚 Tài liệu mới cập nhật</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning Cơ bản</h5>
+                            <p class="card-text">
+                                Mô tả các khái niệm cốt lõi trong học máy, cập
+                                nhật 18/06/2025.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary"
+                                >Xem chi tiết</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Xử lý ảnh với Python</h5>
+                            <p class="card-text">
+                                Hướng dẫn thực hành xử lý ảnh sử dụng OpenCV và
+                                PIL.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary"
+                                >Tải tài liệu</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Phân tích dữ liệu với Pandas
+                            </h5>
+                            <p class="card-text">
+                                Tổng hợp ví dụ thực tế xử lý dữ liệu tabular với
+                                pandas.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary"
+                                >Xem nội dung</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Theses -->
+        <section class="container mb-5">
+            <h2 class="section-title">📄 Luận văn tiêu biểu</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-success h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Dự báo chuỗi thời gian với LSTM
+                            </h5>
+                            <p class="card-text">
+                                Tác giả: Nguyễn Văn A<br />Năm: 2024
+                            </p>
+                            <a href="#" class="btn btn-success btn-sm"
+                                >Xem luận văn</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-success h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Tối ưu hoá mô hình học sâu
+                            </h5>
+                            <p class="card-text">
+                                Tác giả: Trần Thị B<br />Năm: 2025
+                            </p>
+                            <a href="#" class="btn btn-success btn-sm"
+                                >Tải xuống</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-white pt-5 pb-4" style="background-color: #1a237e">
+            <div class="container text-center text-md-start">
+                <div class="row text-center text-md-start">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 fw-bold text-warning">
+                            MSc Portal
+                        </h5>
+                        <p>
+                            Cổng thông tin hỗ trợ học viên cao học ngành Khoa
+                            học Dữ liệu - Đại học KHTN.
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 fw-bold text-warning">
+                            Chức năng
+                        </h5>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none"
+                                >Khóa học</a
+                            >
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none"
+                                >Tài liệu</a
+                            >
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none"
+                                >Luận văn</a
+                            >
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none"
+                                >Giảng viên</a
+                            >
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 fw-bold text-warning">
+                            Hỗ trợ
+                        </h5>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none"
+                                >Hỏi đáp</a
+                            >
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none"
+                                >Tài khoản</a
+                            >
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none"
+                                >Hướng dẫn sử dụng</a
+                            >
+                        </p>
+                        <p>
+                            <a href="#" class="text-white text-decoration-none"
+                                >Liên hệ</a
+                            >
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 fw-bold text-warning">
+                            Liên hệ
+                        </h5>
+                        <p>
+                            <i class="fas fa-home me-3"></i> 227 Nguyễn Văn Cừ,
+                            Q.5, TP.HCM
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            dtsaudaihoc@hcmus.edu.vn
+                        </p>
+                        <p>
+                            <i class="fas fa-phone me-3"></i> (+84) 28
+                            38.350.097
+                        </p>
+                        <p>
+                            <i class="fas fa-globe me-3"></i> sdh.hcmus.edu.vn
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="my-3" />
+
+                <div class="row d-flex justify-content-between">
+                    <div class="col-md-7 col-lg-8">
+                        <p class="text-white">
+                            © 2025 MSc Portal - Phát triển bởi Khoa Toán Tin học
+                            - Đại học KHTN
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-end">
+                            <a href="#" class="text-white me-4"
+                                ><i class="fab fa-facebook-f"></i
+                            ></a>
+                            <a href="#" class="text-white me-4"
+                                ><i class="fab fa-youtube"></i
+                            ></a>
+                            <a href="#" class="text-white me-4"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                            <a href="#" class="text-white"
+                                ><i class="fab fa-linkedin-in"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
